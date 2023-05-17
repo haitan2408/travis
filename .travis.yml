@@ -15,5 +15,5 @@ script:
   - npm start:dev
 deploy:
   provider: heroku
-  api_key: IgWQoAz_jf3f0uJNXDE1Eg$heroku_key
+  api_key: IgWQoAz_jf3f0uJNXDE1Eg
   app: travis
