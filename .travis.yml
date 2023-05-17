@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+  - "14"
+sudo: false
+
+branches:
+  only:
+    - main
+
+script:
+  - echo '*** Starting build ***'
+  - echo 'Running test'
+  - npm test
+  - echo 'Start'
+  - npm start:dev
+deploy:
+  provider: heroku
+  api_key: IgWQoAz_jf3f0uJNXDE1Eg$heroku_key
+  app: travis
